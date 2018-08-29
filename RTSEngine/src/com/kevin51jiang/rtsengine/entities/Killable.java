@@ -21,26 +21,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.kevin51jiang.rtsengine.entities.buildings;
-
-import com.kevin51jiang.rtsengine.Coord;
-import com.kevin51jiang.rtsengine.entities.Entity;
-import java.util.ArrayList;
+package com.kevin51jiang.rtsengine.entities;
 
 /**
- *
+ * Makes the entity Killable
  * @author Kevin Jiang <kevin51jiang@email.com>
  */
-public abstract class Building extends Entity {
-
-    public Building(Coord position, int health, int armor, float radius) {
-        super(position, health, armor, radius);
-        
-        
-    }
+public interface Killable {
     
-    public void takeDamage(int dmg) {
-        
-    }
-
+    
+    public void takeDamage(int dmg);
+    public void getKilled();
 }

@@ -5,10 +5,9 @@
         <group>
             <file>file:/home/bob51zhang/NetBeansProjects/RTSEngine/src/com/kevin51jiang/rtsengine/UberManager.java</file>
             <file>file:/home/bob51zhang/NetBeansProjects/RTSEngine/src/com/kevin51jiang/rtsengine/entities/units/Unit.java</file>
-            <file>file:/home/bob51zhang/NetBeansProjects/RTSEngine/src/com/kevin51jiang/rtsengine/entities/units/Marine.java</file>
             <file>file:/home/bob51zhang/NetBeansProjects/RTSEngine/src/com/kevin51jiang/rtsengine/EntityManager.java</file>
+            <file>file:/home/bob51zhang/NetBeansProjects/RTSEngine/src/com/kevin51jiang/rtsengine/entities/Killable.java</file>
             <file>file:/home/bob51zhang/NetBeansProjects/RTSEngine/src/com/kevin51jiang/rtsengine/entities/Entity.java</file>
-            <file>file:/home/bob51zhang/NetBeansProjects/RTSEngine/src/com/kevin51jiang/rtsengine/entities/buildings/Building.java</file>
         </group>
     </open-files>
 </project-private>

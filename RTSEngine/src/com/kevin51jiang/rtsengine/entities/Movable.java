@@ -23,73 +23,25 @@
  */
 package com.kevin51jiang.rtsengine.entities;
 
+import com.kevin51jiang.rtsengine.AIPath;
 import com.kevin51jiang.rtsengine.Coord;
 
 /**
- * General Entity object
+ *
  * @author Kevin Jiang <kevin51jiang@email.com>
  */
-public abstract class Entity {
-
-    Coord position;
-    private int health;
-    private int armor;
-    private float radius; 
-
-    /**
-     * Usually used to invulnerable units.
-     * @param startPos 
-     * @param radius 
-     */
-    public Entity(Coord startPos, float radius) {
-        this.position = startPos;
-        this.radius = radius;
-    }
-
-    /**
-     * Usually used for units (in general)
-     * @param position
-     * @param health
-     * @param armor
-     * @param radius 
-     */
-    public Entity(Coord position, int health, int armor, float radius) {
-        this.position = position;
-        this.health = health;
-        this.armor = armor;
-        this.radius = radius;
-    }
-
-    public Coord getPosition() {
-        return position;
-    }
-
-    public void setPosition(Coord position) {
-        this.position = position;
-    }
-
-    public int getHealth() {
-        return health;
-    }
-
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
-    public int getArmor() {
-        return armor;
-    }
-
-    public void setArmor(int armor) {
-        this.armor = armor;
-    }
-
-    public float getRadius() {
-        return radius;
-    }
-
-    public void setRadius(float radius) {
-        this.radius = radius;
-    }
+public interface Movable {
     
+    /**
+     * Teleports unit to that coordinate.
+     * @param newCoord Coordinate to tp to.
+     */
+    public void move(Coord newCoord);
+    public void setGrandDest(Coord newCoord);
+    /**
+     * Creates the path overall
+     * @return 
+     */
+    public AIPath createPath();
+        
 }

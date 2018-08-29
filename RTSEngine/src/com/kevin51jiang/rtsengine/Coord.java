@@ -8,6 +8,13 @@ public class Coord {
 
     private float y;
 
+    public Coord(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    
+    
     /**
      * * Adds a deltaY to current X-val
      * @param deltaX  Difference in X to be added
