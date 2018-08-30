@@ -1,2 +1,2 @@
 # BasicRTS
-b a s i c t h o t
+b a s i c rts
